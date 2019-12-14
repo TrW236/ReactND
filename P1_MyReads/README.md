@@ -8,7 +8,7 @@ Starter Codes originate from [ReactND My Reads Starter](https://github.com/udaci
 ├───public  # stores the homepage html and icon 
 ├───src  # main folder
 │   ├───components  # stores React components
-│   │   ├───BookViewCard.js
+│   │   ├───BookView.js
 │   │   └───
 │   ├───icons  # stores imgs
 │   ├───App.js  # main js file

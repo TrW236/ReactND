@@ -55,7 +55,7 @@ class App extends Component {
             // assign a callback function
             onCreateContact={(contact) => {
               this.createContact(contact);
-              history.push('/')  // todo
+              history.push('/')
             }}
           />
         )}/>
