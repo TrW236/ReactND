@@ -4,6 +4,7 @@ import './App.css'
 import BookViewList from './components/BookViewList'
 import { Route, Link } from 'react-router-dom'
 import SearchView from "./components/SearchView";
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 
 const shelf_titles = [
@@ -78,7 +79,8 @@ class BooksApp extends React.Component {
                 want2read_books: want2read_books,
                 read_books: prevState.read_books
             }
-        ))
+        ));
+        NotificationManager.success('successfully added into "want to read" shelf', book.title);
     }
 
     changeShelf(e, book) {
@@ -153,6 +155,7 @@ class BooksApp extends React.Component {
                     onChangeHandler={ this.add2shelf }
                 />
             )}/>
+            <NotificationContainer/>
           </div>
         )
     }

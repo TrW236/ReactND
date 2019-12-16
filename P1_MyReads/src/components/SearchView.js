@@ -2,6 +2,8 @@ import React from 'react';
 import {withRouter} from 'react-router-dom'
 import * as BooksAPI from "../BooksAPI";
 import PropTypes from 'prop-types';
+import 'react-notifications/lib/notifications.css';
+
 
 class SearchView extends React.Component{
     state = {
@@ -66,17 +68,6 @@ class SearchView extends React.Component{
                                         <div className="book-shelf-changer">
                                             <button onClick={(e) => onChangeHandler(e, book)}>Add a book</button>
                                         </div>
-                                        {/*<div className="book-shelf-changer">*/}
-                                        {/*    <select*/}
-                                        {/*        defaultValue="move"*/}
-                                        {/*        onChange={(e) => onChangeHandler(e, book)}>*/}
-                                        {/*        <option value="move" disabled>Move to...</option>*/}
-                                        {/*        <option value="currentlyReading">Currently Reading</option>*/}
-                                        {/*        <option value="wantToRead">Want to Read</option>*/}
-                                        {/*        <option value="read">Read</option>*/}
-                                        {/*        <option value="delete">Delete</option>*/}
-                                        {/*    </select>*/}
-                                        {/*</div>*/}
                                     </div>
                                     <div className="book-title">{ book.title }</div>
                                     <div className="book-authors">{ book.authors }</div>
