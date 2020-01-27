@@ -24,6 +24,7 @@ Starter Codes originate from [ReactND My Reads Starter](https://github.com/udaci
     * [`react-router-dom`](https://www.npmjs.com/package/react-router-dom)
 * In the Terminal, run
     ```shell script
+    $ npm audit fix --force
     $ npm install
     $ npm start
     ```
